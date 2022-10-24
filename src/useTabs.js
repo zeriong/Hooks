@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const useTabs = (initialTab, allTabs) => {
+export const useTabs = (initialTab, allTabs) => {
     if (!allTabs || !Array.isArray(allTabs)) {
         return;
     }
