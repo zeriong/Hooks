@@ -16,7 +16,7 @@ export const useTabs = (initialTab, allTabs) => {
     };
 }
 /*
-* const {currentItem, changeItem} = useTabs(1, content);  // {currentItem, changeItem} = {currentItem, changeItem}(useTabs의 반환값) 이름도 같고 위치도 같기때문에 컴포넌트에 넣으면 더 이해하기 쉬울지도?
+* const {currentItem, changeItem} = useTabs(1, content);  // {currentItem, changeItem} = {currentItem, changeItem}(useTabs의 반환값) 이름도 같고 위치도 같기때문에 컴포넌트에 넣으면 더 가독성이 좋아서인 듯 하다
 * <div className="App">
 *      {content.map((section, index) => (         // array.map( (item(적용요소자체), index(배열순서로 배열마다 각각번호를 달아줌))=>{ 컴포넌트 } )
 *        <button onClick={ ()=> changeItem(index) }>{section.tab}</button> //changeItem은 useState 의 set/fuction이기때문에 클릭시 currentIndex를 .map에서 받은 index 순번으로 바꿔준다.
