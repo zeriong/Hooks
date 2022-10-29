@@ -44,15 +44,15 @@ export const useFullscreen = (callback) => {
 
   const { element, triggerFull, exitFull } = useFullscreen(onFullS);     //위에 선언된 함수 onFulls 는 boolean값을 받아 오기 때문에 useFullscreen의 매게변수로 적합하다.
                                                                          //구조분해문법을 이용하여 useFullscreen에서 각각 반환값을 가져와서 쓴다.
-<div className="App" style={{ height: "1000vh" }}>
-    <div ref={element}>    //exitFull 버튼을 만들어주기 위해서 img와 버튼을 같이 div로 감싸서 전체화면으로 만들어줬다. 그 이후 ref는 전체화면이 될 요소에 추가해주면 끝.
-        <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvY45643weBzB7-9Xz-ZlV3HZTQVO3ZiPmBg&usqp=CAU"   //압둘알리사진이다.
-            alt="이이잉~"
-        />
-        <button onClick={exitFull}>Exit fullscreen</button>
-    </div>
-    <button onClick={triggerFull}>Make fullscreen</button>
-</div>
+  <div className="App" style={{ height: "1000vh" }}>
+      <div ref={element}>    //exitFull 버튼을 만들어주기 위해서 img와 버튼을 같이 div로 감싸서 전체화면으로 만들어줬다. 그 이후 ref는 전체화면이 될 요소에 추가해주면 끝.
+          <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvY45643weBzB7-9Xz-ZlV3HZTQVO3ZiPmBg&usqp=CAU"   //압둘알리사진이다.
+              alt="앗살라말라이꿍~"
+          />
+          <button onClick={exitFull}>Exit fullscreen</button>
+      </div>
+      <button onClick={triggerFull}>Make fullscreen</button>
+  </div>
 
  */
