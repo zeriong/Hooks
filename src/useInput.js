@@ -4,8 +4,8 @@ export const useInput = (initialValue, validator) => {
     const [value, setValue] = useState(initialValue);
     const onChange = event => {
         const{
-            target: {value}      //전달인자 event를 가져와서 구조분해문법(destructuring)을 사용하여 인풋에 value를 쏙 빼온다.
-        } = event;
+            target: {value}      //event를 가져와서 구조분해문법(destructuring)을 사용하여 인풋에 value를 쏙 빼온다.
+        } = event;               //이 후 value를 선언하면 모두 useInput을 사용한 요소의 target.value가된다.
         let willUpdate = true;
         if (typeof validator === "function") {
             willUpdate = validator(value);      //유효성검사 //함수면 value를 전달받아 함수로 실행
