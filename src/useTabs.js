@@ -33,6 +33,6 @@ export const useTabs = (initialTab, allTabs) => {
 *        <button onClick={ ()=> changeItem(index) }>{section.tab}</button> //changeItem은 useState 의 set/fuction이기때문에 클릭시 currentIndex를 .map에서 받은 index 순번으로 바꿔준다.
 *      ))}                                                                 // (index)예시: section1 을 클릭하면 배열0번째 이기때문에 index도 0이다. section2 는 1번째 배열이므로 index는 1
 *      <div>{currentItem.content}</div>                    //이후에 changeItem = setCurrentIndex(useState set/function) = currentIndex 해당 index값으로 바꿔줌
-*     </div>                                               //그렇게되면 currentItem = allTabs[ currentIndex(mpa의 index값) ].content 가 출력된다.
+* </div>                                               //그렇게되면 currentItem = allTabs[ currentIndex(mpa의 index값) ].content 가 출력된다.
 *
 */
