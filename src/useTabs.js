@@ -16,6 +16,17 @@ export const useTabs = (initialTab, allTabs) => {
     };
 }
 /*
+* const content = [
+*   {
+*       tab: "Section 1",
+*       content: "I'm the content of the Section 1"
+*    },
+*   {
+*       tab: "Section 2",
+*       content: "I'm the content of the Section 2"
+*    }
+* ]
+*
 * const {currentItem, changeItem} = useTabs(1, content);  // {currentItem, changeItem} = {currentItem, changeItem}(useTabs의 반환값) 이름도 같고 위치도 같기때문에 컴포넌트에 넣으면 더 가독성이 좋아서인 듯 하다
 * <div className="App">
 *      {content.map((section, index) => (         // array.map( (item(적용요소자체), index(배열순서로 배열마다 각각번호를 달아줌))=>{ 컴포넌트 } )
