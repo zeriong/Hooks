@@ -1,5 +1,5 @@
 import defaultAxios from "axios";
-// 가장먼저 axios를 인스톨 해야한다. 터미널에 npm install axios 혹은 웹스톰 문제해결기능인 알트+엔터 누르고 해결
+// 가장먼저 axios를 인스톨 해야한다. 터미널에 npm install axios 혹은 툴의 문제해결기능을 사용 (웹스톰은 알트+엔터 누르고 해결)
 // 간단하게 사용할때는 fetch를 쓰고, 이외의 확장성을 염두해봤을 땐 axios를 쓰는게 좋다.
 import { useEffect, useState } from "react";
 
@@ -43,7 +43,6 @@ const useAxios = (opts, axiosInstance = defaultAxios) => {
     // state의 모든것과 refetch를 반환하여 이후 구조분해문법을 사용한다면 state에서 원하는 key만 입력하면 전부 빼다 쓸 수 있다.
 };
 
-export default useAxios;
 /*
 
    const { loading, data, refetch } = useAxios({
