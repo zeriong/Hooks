@@ -5,7 +5,7 @@ export const useNetwork = (onChange) => {
     const handleChange = () => {
         if (typeof onChange === "function") {    //온체인지(useNetwork의 전달인자)함수가 함수일때
             onChange(navigator.onLine);          //온체인지 함수의 argument는  navigator.onLine 에 따라서 t/f 를 반환한다
-        }
+        }                                       //navigator는 브라우저와 관련된 정보를 컨트롤 한다. 브라우저에 대한 버전, 정보, 종류 등 관련된 정보이다.
         setStatus(navigator.onLine);            //status를 t/f 로 바꿔준다.
     };
     useEffect(() => {
